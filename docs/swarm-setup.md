@@ -20,7 +20,7 @@ docker swarm init --advertise-addr $(ifconfig eth1 | grep "inet addr" | awk '{pr
 docker swarm join-token worker | grep "join"
 
 # Join command for manager
-docker swarm join-token worker | grep "join"
+docker swarm join-token manager | grep "join"
 
 
 
